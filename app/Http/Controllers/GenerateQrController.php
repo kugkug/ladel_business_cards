@@ -57,7 +57,7 @@ class GenerateQrController extends Controller
             Storage::put('public/qrcodes/'.$qr_code_filename, QrCode::size(200)
             ->format('png')
             // ->generate('https://cards.ladelapp.com/employee/vcard'.$idno));
-            ->generate('https://cards.ladelapp.com/employee/vcard/'.$idno));
+            ->generate('https://aboitizeconomicestates.kugkugtech.com/employee/vcard/'.$idno));
 
 
             // return response()->download(storage_path('public/qrcodes/'.$qr_code_filename));
