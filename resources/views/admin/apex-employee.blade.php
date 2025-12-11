@@ -1,0 +1,82 @@
+@include('partials.clients.headers')
+    
+<style>
+    #div-card {
+        background-color: white !important;
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
+
+    .demo-bg {
+        opacity: 0.5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+</style>
+    {{-- <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">
+                Employee Information
+            </h3>
+        </div>
+        <div class="card-body"> --}}
+            <div class="row demo-wrap">
+                <div class="col-12" id="div-card">
+                    {{-- <img class="demo-bg" src="{{ asset('images/bc_logo.png') }}"> --}}
+                    <div class="card-header text-muted border-bottom-0 " style="color: #000000;">
+                        <h2 class="lead text-red"><b>
+                            {{ $employee['first_name']}}
+                            {{ $employee['middle_name']}}
+                            {{ $employee['last_name']}}
+                        </b></h2>
+                        <p class=" text-sm">
+                            {{ $employee['position_title']}}
+                        </p>
+                        
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="row">
+                        <div class="col-12 pb-3">
+                            <p class="text-muted text-sm" style="color: #000000;">
+                                Paperless Information Transfer <br />
+                                Tap to Save Contact Details
+                            </p>
+                            
+                            {{-- <ul class="ml-4 mb-0 fa-ul text-muted">
+                            <li class="small"><span class="fa-li">
+                                <i class="fas fa-lg  fa-envelope"></i></span> 
+                                Email: {{ $employee[0]->email}}
+                            </li>
+                            <li class="small"><span class="fa-li">
+                                <i class="fas fa-lg fa-phone"></i></span> 
+                                Phone #: {{ $employee[0]->employee_number}}</li>
+                            </ul> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/apex-employee/vcard/{{ $employee['id_no'] }}" class="mt-2 btn btn-sm btn-block btn-primary" id="save-btn">
+                <i class="fas fa-plus"></i> Add to Contact
+            </a>  
+        {{-- </div> --}}
+        {{-- <div class="card-footer">
+            <div class="text-right">
+                <a href="/employee/vcard/{{$employee[0]->id_no}}" class="btn btn-sm btn-block btn-primary" id="save-btn">
+                    <i class="fas fa-plus"></i> Add to Contact
+                </a>                    
+            </div>
+        </div>
+        
+    </div> --}}
+    
+
+@include('partials.clients.footers')
+
+<script src="{{ asset('adminlte3.2/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('scripts/admin.js') }}"></script>
