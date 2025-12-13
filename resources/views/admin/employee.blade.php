@@ -35,8 +35,13 @@
                             {{ $employee[0]->middle_name}}
                             {{ $employee[0]->last_name}}
                         </b></h2>
-                        <p class=" text-sm">
-                            {{ $employee[0]->position_title}}
+                        <p class="text-sm">
+                            {{ $employee[0]->position_title}} <br />
+
+                            {{ $employee[0]->department}} <br />
+                            {{ $employee[0]->email}} <br />
+                            {{ $employee[0]->employee_number}} <br />
+                            <a href="www.aboitizeconomicestates.com" target="_blank">www.aboitizeconomicestates.com</a>
                         </p>
                         
                     </div>

@@ -73,7 +73,7 @@ class GenerateQrController extends Controller
             readfile($image); 
 
         } catch(\Exception $e) {
-
+            return redirect()->back()->with("error", "Employee not found");
         }
     }   
 }

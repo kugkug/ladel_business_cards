@@ -83,14 +83,18 @@ class EmployeesController extends Controller
      */
     public function edit($id)
     {
-        $employee = Employees::where('id_no', $id)->get();
-        $data = [
-            'title' => 'Employee', 
-            'header' => 'Edit Employee',
-            'employee' => $employee,
-            'departments' => $this->departments
-        ];
-        return view("admin.edit", $data);
+        try {
+            $employee = Employees::where('id_no', $id)->get();
+            $data = [
+                'title' => 'Employee', 
+                'header' => 'Edit Employee',
+                'employee' => $employee,
+                'departments' => $this->departments
+                ];
+            return view("admin.edit", $data);
+        } catch (\Exception $e) {
+            return redirect()->back()->with("error", "Employee not found");
+        }
     }
 
     /**
@@ -129,13 +133,17 @@ class EmployeesController extends Controller
 
     public function employee($id)
     {
-        $employee = Employees::where('id_no', $id)->get();
-        $data = [
-            'title' => 'Employees', 
-            'header' => 'List of Employees',
-            'employee' => $employee
-        ];
-        return view("admin.employee", $data);
+        try {
+            $employee = Employees::where('id_no', $id)->get();
+            $data = [
+                'title' => 'Employees', 
+                'header' => 'List of Employees',
+                'employee' => $employee
+            ];
+            return view("admin.employee", $data);
+        } catch (\Exception $e) {
+            return redirect()->back()->with("error", "Employee not found");
+        }
     }
 
     public function apex($id) {
