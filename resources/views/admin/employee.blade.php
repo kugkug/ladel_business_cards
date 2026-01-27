@@ -28,7 +28,7 @@
         <div class="card-body"> --}}
             <div class="row demo-wrap">
                 <div class="col-12" id="div-card">
-                    <img class="demo-bg" src="{{ asset('images/bc_logo.png') }}">
+                    <img class="demo-bg" src="{{ asset('images/aee_horizontal_logo.png') }}">
                     <div class="card-header border-bottom-0 " style="color: #000000;">
                         <h2 class="lead text-red"><b>
                             {{ $employee[0]->first_name}}
