@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{{ asset('images/bc_logo.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/aee_horizontal_logo.png') }}" type="image/x-icon">
     
 
     <link rel="stylesheet" href="{{ asset('adminlte3.2/plugins/fontawesome-free/css/all.min.css') }} ">
@@ -26,8 +26,8 @@
         <nav class="main-header navbar navbar-expand-md navbar-info">
             <div class="container">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ asset('images/bc_logo.png') }}" alt="App LOGO" class="brand-image elevation-3" style="opacity: .8">
-                    <span class="brand-text font-weight-light text-white">Business Cards</span>
+                    <img src="{{ asset('images/aee_horizontal_logo.png') }}" alt="App LOGO" class="brand-image " style="opacity: .8">
+                    {{-- <span class="brand-text font-weight-light text-white">Business Cards</span> --}}
                 </a>
         
                 {{-- <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

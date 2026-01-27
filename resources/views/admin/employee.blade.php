@@ -28,7 +28,7 @@
         <div class="card-body"> --}}
             <div class="row demo-wrap">
                 <div class="col-12" id="div-card">
-                    <img class="demo-bg" src="{{ asset('images/aee_horizontal_logo.png') }}">
+                    <img class="demo-bg mt-5" src="{{ asset('images/aee_horizontal_logo.png') }}">
                     <div class="card-header border-bottom-0 " style="color: #000000;">
                         <h2 class="lead text-red"><b>
                             {{ $employee[0]->first_name}}
@@ -41,13 +41,13 @@
                             {{ $employee[0]->department}} <br />
                             {{ $employee[0]->email}} <br />
                             {{ $employee[0]->employee_number}} <br />
-                            <a href="www.aboitizeconomicestates.com" target="_blank">www.aboitizeconomicestates.com</a>
+                            <a href="http://aboitizeconomicestates.com" target="_blank">www.aboitizeconomicestates.com</a>
                         </p>
                         
                     </div>
                     <div class="card-body pt-0">
                         <div class="row">
-                        <div class="col-12 pb-3">
+                        <div class="col-12 pb-2">
                             <p class=" text-sm" style="color: #000000;">
                                 Paperless Information Transfer <br />
                                 Tap to Save Contact Details
